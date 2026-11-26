@@ -1,1 +1,61 @@
 
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Galeria | Carlos Chagas — Nossa Terra</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+<header>
+    <div class="container navbar">
+        <a class="logo" href="index.html">Carlos Chagas<span>Nossa Terra</span></a>
+        <button class="menu-btn" aria-label="Abrir menu">☰</button>
+        <nav>
+            <a href="index.html">Início</a>
+            <a href="historia.html">História</a>
+            <a href="cultura.html">Cultura</a>
+            <a href="economia.html">Economia</a>
+            <a href="esportes.html">Esportes</a>
+            <a href="turismo.html">Turismo</a>
+            <a href="galeria.html">Galeria</a>
+            <a href="contato.html">Contato</a>
+        </nav>
+    </div>
+</header>
+
+<main>
+    <section class="page-banner">
+        <div class="container">
+            <span class="eyebrow">Imagens e lembranças</span>
+            <h1>Galeria de Fotos</h1>
+            <p>Registros de lugares, eventos, paisagens e momentos de Carlos Chagas.</p>
+        </div>
+    </section>
+
+    <section class="section">
+        <div class="container">
+            <div class="section-heading">
+                <small>Memórias visuais</small>
+                <h2>Conheça nossa cidade em imagens</h2>
+            </div>
+            <div class="gallery" id="galeria">
+                <p>Carregando fotografias...</p>
+            </div>
+        </div>
+    </section>
+</main>
+
+<footer>
+    <div class="container">
+        <div class="footer-bottom"><p>© <span id="year"></span> Carlos Chagas — Nossa Terra.</p></div>
+    </div>
+</footer>
+
+<script type="module" src="js/supabase.js"></script>
+<script type="module" src="js/conteudos.js"></script>
+<script src="js/main.js"></script>
+</body>
+</html>
+
