@@ -1,1 +1,168 @@
 
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Conheça a história, a cultura, a economia e os lugares de Carlos Chagas, Minas Gerais.">
+    <title>Carlos Chagas — Nossa Terra</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<header>
+    <div class="container navbar">
+        <a class="logo" href="index.html">
+            Carlos Chagas
+            <span>Nossa Terra</span>
+        </a>
+
+        <button class="menu-btn" aria-label="Abrir menu">☰</button>
+
+        <nav>
+            <a href="index.html">Início</a>
+            <a href="historia.html">História</a>
+            <a href="cultura.html">Cultura</a>
+            <a href="economia.html">Economia</a>
+            <a href="esportes.html">Esportes</a>
+            <a href="turismo.html">Turismo</a>
+            <a href="galeria.html">Galeria</a>
+            <a href="contato.html">Contato</a>
+        </nav>
+    </div>
+</header>
+
+<main>
+    <section class="hero">
+        <div class="container hero-content">
+            <span class="eyebrow">Vale do Mucuri • Minas Gerais</span>
+            <h1>Uma cidade, muitas histórias.</h1>
+            <p>
+                Descubra as raízes, as tradições, as paisagens e as pessoas
+                que fazem de Carlos Chagas um lugar especial.
+            </p>
+            <a href="historia.html" class="btn">Conheça nossa história</a>
+        </div>
+    </section>
+
+    <section class="section">
+        <div class="container">
+            <div class="section-heading">
+                <small>Bem-vindo</small>
+                <h2>Conheça Carlos Chagas</h2>
+                <p>
+                    Um portal dedicado a apresentar a identidade, a memória
+                    e as riquezas do nosso município.
+                </p>
+            </div>
+
+            <div class="cards">
+                <article class="card reveal">
+                    <img src="https://images.unsplash.com/photo-1519681393784-d120267933ba?auto=format&fit=crop&w=900&q=80" alt="Paisagem natural">
+                    <div class="card-content">
+                        <small>Memória</small>
+                        <h3>Nossa história</h3>
+                        <p>Conheça acontecimentos e registros que marcaram a formação da cidade.</p>
+                        <a href="historia.html" class="card-link">Explorar →</a>
+                    </div>
+                </article>
+
+                <article class="card reveal">
+                    <img src="https://images.unsplash.com/photo-1511795409834-ef04bbd61622?auto=format&fit=crop&w=900&q=80" alt="Festa e celebração">
+                    <div class="card-content">
+                        <small>Identidade</small>
+                        <h3>Cultura e tradições</h3>
+                        <p>Descubra manifestações culturais, festas e costumes locais.</p>
+                        <a href="cultura.html" class="card-link">Explorar →</a>
+                    </div>
+                </article>
+
+                <article class="card reveal">
+                    <img src="https://images.unsplash.com/photo-1500595046743-cd271d694d30?auto=format&fit=crop&w=900&q=80" alt="Pecuária">
+                    <div class="card-content">
+                        <small>Desenvolvimento</small>
+                        <h3>Economia</h3>
+                        <p>Saiba mais sobre a produção rural, a pecuária e as atividades econômicas.</p>
+                        <a href="economia.html" class="card-link">Explorar →</a>
+                    </div>
+                </article>
+            </div>
+        </div>
+    </section>
+
+    <section class="section section-bege">
+        <div class="container">
+            <div class="section-heading">
+                <small>Descubra</small>
+                <h2>O que você quer conhecer?</h2>
+                <p>Explore diferentes aspectos da vida e da identidade de Carlos Chagas.</p>
+            </div>
+
+            <div class="cards">
+                <article class="card">
+                    <div class="card-content">
+                        <h3>Esportes</h3>
+                        <p>Conheça equipes, eventos e atividades esportivas.</p>
+                        <a href="esportes.html" class="card-link">Ver página →</a>
+                    </div>
+                </article>
+
+                <article class="card">
+                    <div class="card-content">
+                        <h3>Turismo</h3>
+                        <p>Descubra paisagens, espaços e lugares para visitar.</p>
+                        <a href="turismo.html" class="card-link">Ver página →</a>
+                    </div>
+                </article>
+
+                <article class="card">
+                    <div class="card-content">
+                        <h3>Galeria</h3>
+                        <p>Veja fotografias que registram a cidade e sua comunidade.</p>
+                        <a href="galeria.html" class="card-link">Ver página →</a>
+                    </div>
+                </article>
+            </div>
+        </div>
+    </section>
+
+    <section class="section">
+        <div class="container">
+            <div class="section-heading">
+                <small>Atualizações</small>
+                <h2>Em destaque</h2>
+                <p>Notícias e conteúdos publicados no portal.</p>
+            </div>
+            <div class="cards" id="destaques">
+                <p>Carregando destaques...</p>
+            </div>
+        </div>
+    </section>
+</main>
+
+<footer>
+    <div class="container">
+        <div class="footer-content">
+            <div>
+                <a class="logo" href="index.html">Carlos Chagas<span>Nossa Terra</span></a>
+                <p>Um portal sobre a memória, a cultura e as riquezas do município.</p>
+            </div>
+            <div>
+                <p><strong>Explore</strong></p>
+                <p><a href="historia.html">História</a></p>
+                <p><a href="turismo.html">Turismo</a></p>
+                <p><a href="contato.html">Contato</a></p>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>© <span id="year"></span> Carlos Chagas — Nossa Terra. Projeto informativo e cultural.</p>
+        </div>
+    </div>
+</footer>
+
+<script type="module" src="js/supabase.js"></script>
+<script type="module" src="js/conteudos.js"></script>
+<script src="js/main.js"></script>
+</body>
+</html>
+
