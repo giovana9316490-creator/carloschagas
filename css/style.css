@@ -116,7 +116,8 @@ nav a:hover, nav a.active {
     color: white;
     background:
         linear-gradient(90deg, rgba(12,35,24,.88), rgba(12,35,24,.25)),
-        url('https://images.unsplash.com/photo-1470770841072-f978cf4d019e?auto=format&fit=crop&w=2000&q=85')
+      <img
+        src="img/Pôster tipográfico Giovana Silva.png">
         center/cover;
     position: relative;
     overflow: hidden;
