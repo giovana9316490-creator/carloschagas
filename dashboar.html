@@ -1,0 +1,98 @@
+
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Painel Administrativo | Nossa Terra</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<header>
+    <div class="container navbar">
+        <a class="logo" href="index.html">Carlos Chagas<span>Painel administrativo</span></a>
+        <button class="menu-btn" id="sair">Sair</button>
+    </div>
+</header>
+
+<main class="section">
+    <div class="container">
+        <div class="section-heading">
+            <small>Gerenciamento do portal</small>
+            <h1>Painel administrativo</h1>
+            <p>Cadastre informações, publique conteúdos e acompanhe as mensagens recebidas.</p>
+        </div>
+
+        <section class="admin-box">
+            <h2>Novo conteúdo</h2>
+
+            <form class="form" id="formConteudo">
+                <div>
+                    <label for="titulo">Título</label>
+                    <input id="titulo" required maxlength="180">
+                </div>
+
+                <div>
+                    <label for="slug">Identificador (slug)</label>
+                    <input id="slug" required maxlength="180" placeholder="exemplo-de-conteudo">
+                </div>
+
+                <div>
+                    <label for="categoria">Categoria</label>
+                    <select id="categoria" required>
+                        <option value="historia">História</option>
+                        <option value="cultura">Cultura</option>
+                        <option value="economia">Economia</option>
+                        <option value="esportes">Esportes</option>
+                        <option value="turismo">Turismo</option>
+                    </select>
+                </div>
+
+                <div>
+                    <label for="resumo">Resumo</label>
+                    <textarea id="resumo" maxlength="500" required></textarea>
+                </div>
+
+                <div>
+                    <label for="descricao">Descrição completa</label>
+                    <textarea id="descricao" required></textarea>
+                </div>
+
+                <div>
+                    <label for="imagem">Imagem</label>
+                    <input id="imagem" type="file" accept="image/jpeg,image/png,image/webp">
+                </div>
+
+                <div>
+                    <label>
+                        <input id="publicado" type="checkbox">
+                        Publicar imediatamente
+                    </label>
+                </div>
+
+                <button class="btn" type="submit">Salvar conteúdo</button>
+                <p class="status" id="statusConteudo" role="status"></p>
+            </form>
+        </section>
+
+        <section class="admin-box">
+            <h2>Conteúdos cadastrados</h2>
+            <div class="admin-list" id="listaConteudos">
+                <p>Carregando...</p>
+            </div>
+        </section>
+
+        <section class="admin-box">
+            <h2>Mensagens recebidas</h2>
+            <div class="admin-list" id="listaMensagens">
+                <p>Carregando...</p>
+            </div>
+        </section>
+    </div>
+</main>
+
+<script type="module" src="js/supabase.js"></script>
+<script type="module" src="js/dashboard.js"></script>
+</body>
+</html>
