@@ -1,1 +1,18 @@
 
+function cardConteudo(item) {
+    return `
+        <article class="card reveal">
+            ${item.imagem ? `<img src="${escapar(item.imagem)}" alt="${escapar(item.titulo)}" loading="lazy">` : ''}
+            <div class="card-content">
+                <small>${escapar(item.categoria)}</small>
+                <h3>${escapar(item.titulo)}</h3>
+                <p>${escapar(item.resumo || '')}</p>
+                <details>
+                    <summary class="card-link">Ler mais</summary>
+                    <p>${escapar(item.descricao || '')}</p>
+                </details>
+            </div>
+        </article>
+    `;
+}
+
