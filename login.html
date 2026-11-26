@@ -1,1 +1,49 @@
 
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login Administrativo | Nossa Terra</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+<header>
+    <div class="container navbar">
+        <a class="logo" href="index.html">Carlos Chagas<span>Nossa Terra</span></a>
+        <a href="index.html">Voltar ao site</a>
+    </div>
+</header>
+
+<main class="section">
+    <div class="container">
+        <div class="admin-box">
+            <div class="section-heading">
+                <small>Área restrita</small>
+                <h2>Acesso administrativo</h2>
+                <p>Entre com o e-mail e a senha cadastrados no Supabase.</p>
+            </div>
+
+            <form class="form" id="formLogin">
+                <div>
+                    <label for="email">E-mail</label>
+                    <input id="email" type="email" required autocomplete="username">
+                </div>
+
+                <div>
+                    <label for="senha">Senha</label>
+                    <input id="senha" type="password" required autocomplete="current-password">
+                </div>
+
+                <button class="btn" type="submit">Entrar</button>
+                <p class="status" id="statusLogin" role="status"></p>
+            </form>
+        </div>
+    </div>
+</main>
+
+<script type="module" src="js/supabase.js"></script>
+<script type="module" src="js/login.js"></script>
+</body>
+</html>
+
